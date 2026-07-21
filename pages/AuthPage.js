@@ -29,4 +29,5 @@ class AuthPage{
         await this.signUp.click();
     }
 }
+// test script
 export {AuthPage};
