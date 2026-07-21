@@ -31,4 +31,5 @@ class AuthPage{
 }
 // test script
 //conflict check
+//conflict catch
 export {AuthPage};
