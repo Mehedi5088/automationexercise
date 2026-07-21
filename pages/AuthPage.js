@@ -33,6 +33,7 @@ class AuthPage{
         await this.signUp.click();
     }
 }
+<<<<<<< HEAD
 // test script
 //conflict check
 <<<<<<< HEAD
@@ -48,4 +49,7 @@ class AuthPage{
 // mehedi2 confilict
 // mehedi2 again
 >>>>>>> 772e755 (dsfsd)
+=======
+
+>>>>>>> 4e654c7 (making conflict)
 export {AuthPage};
