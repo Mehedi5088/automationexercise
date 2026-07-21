@@ -36,6 +36,7 @@ class AuthPage{
 // test script
 //conflict check
 <<<<<<< HEAD
+<<<<<<< HEAD
 // mehedi2 confilict
 //conflict catch
 // 3rd try
@@ -43,4 +44,8 @@ class AuthPage{
 // test conflict
 =======
 >>>>>>> 4dc6ff9 (mehedi2)
+=======
+// mehedi2 confilict
+// mehedi2 again
+>>>>>>> 772e755 (dsfsd)
 export {AuthPage};
