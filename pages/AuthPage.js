@@ -25,7 +25,11 @@ class AuthPage{
     async enterEmail(item){
         await this.email.fill(item)
     }
-    async signUpButton(){
+    // async signUpButton(){
+    //     await this.signUp.click();
+    // }
+
+    async signUpButtonUpdate(){
         await this.signUp.click();
     }
 }
