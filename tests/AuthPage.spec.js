@@ -8,7 +8,7 @@ test("Login Page",async ({page})=>{
     await auth.clickLogin();
     await auth.enterName("mehedi");
     await auth.enterEmail("mhasan.egov@gmail.com");
-    await auth.signUpButton();
+    await auth.signUpButtonUpdate();
 
     // page close
     await page.waitForTimeout(9000); 
