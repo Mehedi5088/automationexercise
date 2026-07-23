@@ -33,4 +33,5 @@ class AuthPage{
         await this.signUp.click();
     }
 }
+// stash making
 export {AuthPage};
