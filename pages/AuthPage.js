@@ -4,39 +4,31 @@ import {expect} from '@playwright/test';
 class AuthPage{
     constructor(page){
         this.page = page;
-        this.loginButton = page.locator("a[href='/login']");
-        this.name = page.locator("input[name= 'name']");
-        this.email = page.locator("[data-qa='signup-email']");
-        this.signUp = page.getByRole('button',{name:'Signup'});
-        // this.email= page.locator();
+        this.name = page.locator("input[id= 'user-name']");
+        this.password = page.locator("input[id= 'password']");
+        // this.loginButton = page.locator("input[id= 'login-button']");
+         this.loginButton = page.getByRole('button', { name: 'Login' });
+
 
     }
 
     async openWebsite(){
-        await this.page.goto("https://automationexercise.com");
+        // await this.page.goto("https://automationexercise.com");
+        await this.page.goto("https://www.saucedemo.com/");
+        // create a function for window maximize
+        await this.page.setViewportSize({ width: 1920, height: 1080 });
     }
-    async clickLogin(){
-        await this.loginButton.click();
 
-    }
     async enterName(item){
         await this.name.fill(item)
     }
-    async enterEmail(item){
-        await this.email.fill(item)
+    async enterPassword(item){
+        await this.password.fill(item)
+        await this.loginButton.hover();
     }
-    // async signUpButton(){
-    //     await this.signUp.click();
-    // }
 
     async signUpButtonUpdate(){
-        await this.signUp.click();
+        await this.loginButton.click();
     }
 }
-// test script
-//conflict check
-//conflict catch
-// 3rd try
-// mehedi3 conflict
-// test conflict
 export {AuthPage};
